@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "...riables_mixins"": expected selector or at-rule, was "*,"
+        on line 9 of scss/sassier.scss
+
+4: *
+5: *   SCSS
+6: =============================================================================*\/
+7: @import "sassier_variables_mixins"
+8: 
+9: *,
+10: *:before,
+11: *:after {
+12:   margin: 0;
+13:   padding: 0;
+14:   @include border-box;
+
+Backtrace:
+scss/sassier.scss:9
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:43:in `parse'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/listen-2.10.0/lib/listen/listener.rb:291:in `call'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/listen-2.10.0/lib/listen/listener.rb:291:in `_process_changes'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/listen-2.10.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/listen-2.10.0/lib/listen/listener.rb:238:in `loop'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/listen-2.10.0/lib/listen/listener.rb:238:in `_wait_for_changes'
+/Users/Merve/.rvm/gems/ruby-2.2.0/gems/listen-2.10.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...riables_mixins\"\": expected selector or at-rule, was \"*,\"\A         on line 9 of scss/sassier.scss\A \A 4: *\A 5: *   SCSS\A 6: =============================================================================*/\A 7: @import \"sassier_variables_mixins\"\A 8: \A 9: *,\A 10: *:before,\A 11: *:after {\A 12:   margin: 0;\A 13:   padding: 0;\A 14:   @include border-box;"; }
