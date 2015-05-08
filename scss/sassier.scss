@@ -1,14 +1,14 @@
 
-/*  SCSS stylesheet for: 'https://github.com/Mervodactyl/sassier_with_SCSS.git'
+/*  SCSS stylesheet for: 'https://github.com/Mervodactyl/sassier.git'
 *   <style type="text/scss">
 *
 *   SCSS
 =============================================================================*/
-@import "sassier_variables_mixins";
+@import "sassier_variables_mixins"
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
     @include border-box;
@@ -49,9 +49,10 @@ span {
     width: 95%;
     max-width: $grid-max-width;
   }
-  @for $x from 1 through $grid-columns {
+  @for $x from 1 though $grid-columns {
     .column-#{$x} {
-      width: 100% / $grid-columns * $x;
+      width: 100% / grid-colums * $x;
     }
   }
+
 }
