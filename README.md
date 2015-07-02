@@ -1,4 +1,5 @@
-
 # sassier_with_SCSS
 
-SCSS Grid based design, written in CSS and then again using SCSS 
+First attempts at SCSS Grid based design
+
+Written in CSS originally, and then again using SCSS
